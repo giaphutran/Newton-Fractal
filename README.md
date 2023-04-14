@@ -3,4 +3,4 @@ This Project in C++ will create a Newton Fractal image, which shows where to est
 
 The Newton1.ppm, Newton2.ppm, and Newton3.ppm are the outputs of the project when running in the original state. You can see the picture version of it using GIMP
 
-Because Newton1.ppm and Newton2.ppm are >25MB, I cannot upload it here, but Newton3.ppm will do a good job representing the Newton Fractal of the function
+Because Newton1.ppm and Newton2.ppm are >25MB, I cannot upload it here, but Newton3.ppm will do a good job representing the Newton Fractal Image of the function
