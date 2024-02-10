@@ -15,7 +15,8 @@ To be more specific, it's this line in the function "determinePixelColor(Complex
 Znew = Z - ((Z * Z * Z) - (2.0 * Z) + 2.0) / ((3.0 * Z * Z) - 2.0);
 ```
 For the fractal image of the function above, it would look like this
-![alt text](newton3-1.jpeg)
+![newton3](https://github.com/giaphutran/Newton-Fractal/assets/113154498/16bf7ebf-6dab-4cd1-911d-3227c17c0354)
+
 ``` cplusplus
 Once changed to a different function, for example Z^3:
 ```cplusplus
