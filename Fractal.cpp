@@ -12,7 +12,7 @@ Fractal::~Fractal() {
 
 Pixel Fractal::determinePixelColor(Complex Z)
 {
-	//dont do this
+	//dont uncomment line 16, becayse determinePixelColor will be called thousands of times, which creates  unncessary notifications
 	//cout << ">Fractal determinePixelColor called" << endl;
 	double tol = 1E-4, diff = 1.0, test = 0.58974;
 	unsigned int iter = 0, color = 0;
