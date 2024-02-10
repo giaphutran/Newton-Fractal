@@ -7,4 +7,8 @@ The Newton1.ppm, Newton2.ppm, and Newton3.ppm are the outputs of the project whe
 
 Because Newton1.ppm and Newton2.ppm are >25MB, I cannot upload it here, but Newton3.ppm will do a good job representing the Newton Fractal Image of the function
 
-##
+## Usage
+### Changing the function getting estimated
+``` cplusplus
+cout<<"Hello World">>;
+```
