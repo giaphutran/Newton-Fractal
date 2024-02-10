@@ -15,13 +15,13 @@ To be more specific, it's this line in the function "determinePixelColor(Complex
 Znew = Z - ((Z * Z * Z) - (2.0 * Z) + 2.0) / ((3.0 * Z * Z) - 2.0);
 ```
 For the fractal image of the function above, it would look like this
-![alt text](<../Week 8/Project Assignment/newton1.png>)
+![alt text](newton3-1.jpeg)
 ``` cplusplus
 Once changed to a different function, for example Z^3:
 ```cplusplus
 Znew=Z*Z*Z;
 ```![alt text](<newton1 z^3.png>)
-
+![alt text](<newton1 z^3-1.png>)
 The fractal image would change into a circle like this, which represent all possible places you can start estimating using Newton's method and still get the right answer (Z=0). In fact, you can start with ANY number Z (real and imaginary) and still end up with the root Z=0.
 That's also the reason why the possible starting points looks like a circle (no discontinuity, no jump, no cusp, kinda heh!)
 Pixel Fractal::determinePixelColor(Complex Z)
