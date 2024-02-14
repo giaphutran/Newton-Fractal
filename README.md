@@ -15,48 +15,18 @@ To be more specific, it's this line in the function "determinePixelColor(Complex
 Znew = Z - ((Z * Z * Z) - (2.0 * Z) + 2.0) / ((3.0 * Z * Z) - 2.0);
 ```
 For the fractal image of the function above, it would look like this
+
 ![newton3](https://github.com/giaphutran/Newton-Fractal/assets/113154498/16bf7ebf-6dab-4cd1-911d-3227c17c0354)
 
 ``` cplusplus
 Once changed to a different function, for example Z^3:
 ```cplusplus
 Znew=Z*Z*Z;
-```![alt text](<newton1 z^3.png>)
-![alt text](<newton1 z^3-1.png>)
-The fractal image would change into a circle like this, which represent all possible places you can start estimating using Newton's method and still get the right answer (Z=0). In fact, you can start with ANY number Z (real and imaginary) and still end up with the root Z=0.
-That's also the reason why the possible starting points looks like a circle (no discontinuity, no jump, no cusp, kinda heh!)
-Pixel Fractal::determinePixelColor(Complex Z)
-{
-	//dont uncomment line 16, becayse determinePixelColor will be called thousands of times, which creates  unncessary notifications
-	//cout << ">Fractal determinePixelColor called" << endl;
-	double tol = 1E-4, diff = 1.0, test = 0.58974;
-	unsigned int iter = 0, color = 0;
-	Complex Znew;
-	
-	while (iter < 512)
-	{
-		iter++;
-		Znew = Z - ((Z * Z * Z) - (2.0 * Z) + 2.0) / ((3.0 * Z * Z) - 2.0);
-		diff = getMagnitude(Z - Znew);
-		Z = Znew;
-		if (diff < tol)
-		{
-			try {
-				color = maxIter - min(iter, maxIter);
-				if (abs(Z["imag"]) < tol)
-					return Pixel(color, color, 0);
-				else if (abs(Z["imag"] - test) < tol)
-					return Pixel(0, color, color);
-				else if (abs(Z["imag"] + test) < tol)
-					return Pixel(color, 0, color);
-			}
-			catch (Complex::InputOutOfBoundsException& e) {
-				throw;
-			}
-		}
-	}
-	return Pixel(0, 0, 0);
-}
-
-
 ```
+![newton1 z^3](https://github.com/giaphutran/Newton-Fractal/assets/113154498/0e2fe454-9b1c-4e9e-a6d4-c387262b3c5d)
+
+The fractal image would change into a circle like this, which represent all possible places you can start estimating using Newton's method and still get the right answer (Z=0). In fact, you can start with ANY number Z (real and imaginary) and still end up with the root Z=0.
+That's also the reason why the possible starting points looks like a circle (no discontinuity, no jump, no cusp, kinda nice heh!)
+
+
+
