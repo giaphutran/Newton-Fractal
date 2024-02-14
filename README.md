@@ -18,7 +18,7 @@ For the fractal image of the function above, it would look like this
 
 ![newton3](https://github.com/giaphutran/Newton-Fractal/assets/113154498/16bf7ebf-6dab-4cd1-911d-3227c17c0354)
 
-``` cplusplus
+
 Once changed to a different function, for example Z^3:
 ```cplusplus
 Znew=Z*Z*Z;
